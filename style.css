@@ -1,0 +1,57 @@
+:root {
+  --bg-color: #ffffff;
+  --text-color: #000000;
+  --card-color: #f9f9f9;
+}
+
+body.dark {
+  --bg-color: #121212;
+  --text-color: #f1f1f1;
+  --card-color: #1e1e1e;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+header {
+  background-color: #007acc;
+  color: white;
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+section {
+  padding: 2rem;
+  max-width: 800px;
+  margin: auto;
+}
+
+.projects #project-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+.project-card {
+  background-color: var(--card-color);
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+a {
+  color: #007acc;
+}
+
+button {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
